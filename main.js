@@ -1,6 +1,6 @@
 // RESPONSIVE NAVBAR
 var menuList = document.getElementById("menuList");
-menuList[0].style.maxHeight = "0px";
+menuList.style.maxHeight = "0px";
 
 
 function toggleMenu(){

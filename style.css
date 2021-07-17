@@ -14,11 +14,16 @@ html {
  padding: 0px 40px;
 }
 
+/*
+
+NAVBAR AND CONTAINER HERE
+
+*/
 .container {
  width: 100%;
  min-height: 100vh;
  padding-left: 8%;
- padding-right: 3%;
+ padding-right: 8%;
  box-sizing: border-box;
  overflow: hidden;
 }
@@ -87,7 +92,7 @@ nav ul li a:hover {
 }
 
 .col-1 h2 {
- font-size: 50px;
+ font-size: 49px;
  color: #851f92;
  text-align: center;
  font-family: 'Ubuntu', sans-serif;
@@ -242,12 +247,8 @@ button:active {
   width: 300px;
   font-size: 20px;
   margin-left: 2px;
+  outline: none;
  }
-
-
-
-
-
 
 
  .logo {
@@ -255,4 +256,253 @@ button:active {
   cursor: pointer;
   margin: 30px -20px;
  }
+}
+
+
+/*
+
+CAR SECTION HERE
+
+*/
+
+.sec {
+ width: 100%;
+ height: 150px;
+ padding-right: 3%;
+ margin-top: 100px;
+ background-image: url(./img/sky.jpg);
+ background-size: cover;
+ background-position: center;
+ position: relative;
+ overflow-x: hidden;
+}
+
+
+.high-way {
+ background-image: url(./road.jpg);
+ height: 70px;
+ width: 500%;
+ position: absolute;
+ display: block;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ z-index: 1;
+ background-repeat: repeat-x;
+ animation: high-way 5s linear infinite;
+}
+
+@keyframes high-way {
+ 100% {
+  transform: translateX(-3400px);
+ }
+}
+
+.city {
+ height: 200px;
+ width: 500%;
+ background-image: url(./city.png);
+ position: absolute;
+ bottom: 70px;
+ left: 0;
+ right: 0;
+ display: block;
+ z-index: 1;
+ background-repeat: repeat-x;
+ animation: city 20s linear infinite;
+}
+
+@keyframes city {
+ 100% {
+  transform: translateX(-1400px);
+ }
+}
+
+.car {
+ width: 149px;
+ left: 50%;
+ height: 50px;
+ top: 80px;
+ transform: translateX(-50%);
+ position: absolute;
+ z-index: 2;
+
+}
+
+.car img {
+ width: 160px;
+
+ animation: car 1s linear infinite;
+
+}
+
+@keyframes car {
+ 100% {
+  transform: translateY(-1px);
+ }
+
+ 50% {
+  transform: translateY(1px);
+ }
+
+ 0% {
+  transform: translateY(-1px);
+ }
+}
+
+
+.wheel {
+ left: 50%;
+ bottom: 60px;
+ transform: translateX(-50%);
+ position: absolute;
+ z-index: 2;
+}
+
+.wheel img {
+ width: 30px;
+ height: 30px;
+ animation: wheel 1s linear infinite;
+}
+
+.back-wheel {
+ left: -61px;
+ top: 25px;
+ position: absolute;
+}
+
+.front-wheel {
+ left: 36.5px;
+ top: 25px;
+ position: absolute;
+}
+
+@keyframes wheel {
+ 100% {
+  transform: rotate(360deg);
+ }
+
+}
+
+.title {
+ margin-top: 100px;
+ align-items: center;
+ align-content: center;
+ font-family: 'Titillium Web', sans-serif;
+ font-size: 30px;
+}
+
+.title h3 {
+ text-align: center;
+}
+
+.title h3 span {
+ color: #851f92;
+}
+
+
+.services {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ width: 100%;
+ min-height: 50vh;
+ padding-left: 8%;
+ padding-right: 8%;
+ box-sizing: border-box;
+ overflow: hidden;
+
+}
+
+
+.services .box {
+ position: relative;
+ margin-top: 25px;
+ height: 40vh;
+ width: 350px;
+ padding: 40px;
+ background: rgb(255, 255, 255);
+ box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+ border-radius: 4px;
+ overflow: hidden;
+ text-align: center;
+}
+
+
+.services .box .icon {
+ position: relative;
+ width: 60px;
+ height: 60px;
+ color: #fff;
+ background: #000;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+ border-radius: 50%;
+ font-size: 40px;
+ font-weight: 700;
+ transition: 1s;
+}
+
+/*First box*/
+.services .box:nth-child(1) .icon {
+ box-shadow: 0 0 0 0 #F9601E;
+ background: #F9601E;
+}
+
+.services .box:nth-child(1):hover .icon {
+ box-shadow: 0 0 0 400px #F9601E;
+
+}
+
+/*Second box*/
+.services .box:nth-child(2) .icon {
+ box-shadow: 0 0 0 0 #ad1dc0;
+ background: #ad1dc0;
+}
+
+.services .box:nth-child(2):hover .icon {
+ box-shadow: 0 0 0 400px #ad1dc0;
+
+}
+
+
+
+
+/*Third box*/
+.services .box:nth-child(3) .icon {
+ box-shadow: 0 0 0 0 #F9601E;
+ background: #F9601E;
+}
+
+.services .box:nth-child(3):hover .icon {
+ box-shadow: 0 0 0 400px #F9601E;
+
+}
+
+
+/*Card Content*/
+
+.services .box .content {
+ font-family: 'Titillium Web', sans-serif;
+ position: relative;
+ z-index: 1;
+ transition: 0.5s;
+}
+
+.services .box:hover .content {
+ color: #fff;
+}
+
+.services .box .content h3 {
+ font-size: 20px;
+ margin: 10px 0;
+ padding: 0;
+}
+
+.services .box .content p{
+ margin: 0;
+ padding: 0;
+ 
 }
