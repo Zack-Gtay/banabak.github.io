@@ -13,20 +13,37 @@
 </head>
 
 <body>
+ <div id="preloader"></div>
  <div class="container">
   <!-- NAVBAR -->
-  <div class="navbar">
-   <img src="./img/logo.png" class="logo" alt="">
-   <nav>
-    <ul id="menuList">
-     <li><a href="index.html" class="home-cta">Home</a></li>
-     <li><a href="#">Şoförler</a></li>
-     <li><a href="#">Şirketler</a></li>
-     <li><a href="#">İletişim</a></li>
+  <header class="header">
+   <nav class="navbar">
+    <a href="#" class="nav-logo"><img src="./img/logo.png"></a>
+    <ul class="nav-menu">
+     <li class="nav-item">
+      <a href="#" class="nav-link home">Home</a>
+     </li>
+     <li class="nav-item">
+      <a href="#" class="nav-link ">Şoförler</a>
+     </li>
+     <li class="nav-item">
+      <a href="#" class="nav-link">Şirketler</a>
+     </li>
+     <li class="nav-item">
+      <a href="#" class="nav-link">TOS</a>
+     </li>
+     <li class="nav-item">
+      <a href="#" class="nav-link">İletişim</a>
+     </li>
     </ul>
+    <div class="hamburger">
+     <span class="bar"></span>
+     <span class="bar"></span>
+     <span class="bar"></span>
+    </div>
    </nav>
-   <img class="menu-icon" src="./img/menu.png" onclick="toggleMenu()">
-  </div>
+  </header>
+
   <!-- HERO -->
   <div class="row">
    <div class="col-1">
@@ -60,7 +77,8 @@
  <div class="services">
   
   <div class="box">
-   <div class="icon">01</div>
+   <div class="icon"><i class="fa fa-car" aria-hidden="true"></i>
+</div>
    <div class="content">
     <h3>Sadık sürücüler</h3>
     <p>Markaların daha iyi görünürlüğünü garanti etmek için sürücülerimiz her kampanya için özenle seçilir.</p>
@@ -68,7 +86,7 @@
    
   </div>
   <div class="box">
-   <div class="icon">02</div>
+   <div class="icon"><img class="idea" src="./img/idea.png"></div>
    <div class="content">
     <h3>Yaratıcı tasarımlar</h3>
     <p>Arabaları kaplamaktan daha fazlasını yapıyoruz. Markaların reklamını yaratıcı bir şekilde yapıyoruz</p>
@@ -76,7 +94,8 @@
    
   </div>
   <div class="box">
-   <div class="icon">03</div>
+   <div class="icon"><i class="fa fa-database" aria-hidden="true"></i>
+</div>
    <div class="content">
     <h3>Benzersiz model</h3>
     <p>İş modelimiz, markayı tanıtmanın ve müşterileriyle daha düşük reklam maliyetleriyle etkileşim kurmanın benzersiz yollarını sunar.</p>
@@ -84,11 +103,58 @@
    
   </div>
  </div>
-
+ <div class="title2">
+  <h3>SARMA TÜRLERI</h1>
+ </div>
+ <div class="wrapTypes">
+  <div class="card">
+   <div class="imgBx">
+    <img src="./img/LITE.png" alt="" class="src">
+   </div>
+   <div class="content">
+    <h2>kısmi</h2>
+    <ul>
+     <li>Tüm yolcular için kapsamlı kapsama alanı</li>
+     <li>En iyi değer</li>
+   </ul>
+   </div>
+  </div>
+  <div class="card">
+   <div class="imgBx">
+    <img src="./img/PARTIAL.png" alt="" class="src">
+   </div>
+   <div class="content">
+    <h2>Gelişmiş kısmi</h2>
+    <p>Tüm yolcular için kapsamlı kapsama alanı<br>
+    en iyi değer</p>
+   </div>
+  </div>
+  <div class="card">
+   <div class="imgBx">
+    <img src="./img/FULL.png" alt="" class="src">
+   </div>
+   <div class="content">
+    <h2>Tam</h2>
+    <ul >
+     <li>Tüm yolcular için kapsamlı kapsama alanı</li>
+     <li>en iyi değer</li>
+    </ul>
+    
+   </div>
+  </div>
+ </div>
 
  <script src="./main.js"></script>
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+ // Loader setup
+  var loader = document.getElementById("preloader")
+  window.addEventListener("load", function(){
+   loader.style.display = "none";
+   
+  })
+</script>
 </body>
 
 </html>
