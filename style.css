@@ -94,7 +94,6 @@ li {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px) {}
 
 
 
@@ -326,6 +325,7 @@ CAR SECTION HERE
 
 .title {
   margin-top: 100px;
+  margin-bottom: 30px;
   align-items: center;
   align-content: center;
   font-family: 'Titillium Web', sans-serif;
@@ -461,8 +461,8 @@ CAR SECTION HERE
 wrapTypes
 */
 .title2 {
-  margin-top: 50px;
-  margin-bottom: -40px;
+  margin-top: 60px;
+  margin-bottom: -10px;
   align-items: center;
   align-content: center;
   font-family: 'Titillium Web', sans-serif;
@@ -484,7 +484,7 @@ wrapTypes
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
-
+  margin-bottom: 185px;
 }
 
 .wrapTypes .card {
@@ -492,8 +492,6 @@ wrapTypes
   position: relative;
   max-width: 700px;
   height: 215px;
-  background: linear-gradient(#ad1dc0, #F9601E);
-
   margin: 30px 40px;
   padding: 20px 15px;
   display: flex;
@@ -505,7 +503,7 @@ wrapTypes
 
 .wrapTypes .card:hover {
   height: 320px;
-
+  
 }
 
 .wrapTypes .card .imgBx {
@@ -532,7 +530,7 @@ wrapTypes
   margin-top: -140px;
   padding: 10px 15px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -552,19 +550,235 @@ wrapTypes
   font-size: 35px;
 }
 
-
-
-#preloader {
-  background: linear-gradient(#ad1dc0, #F9601E) url("./img/preloader4.gif") no-repeat center;
-  background-size: 30%;
-  height: 100%;
-  margin-left: -40px;
+.objective {
+  display: flex;
+  flex-wrap: wrap;
+  height: 800px;
+  justify-content: space-between;
   width: 100%;
-  position: fixed;
-  z-index: 100;
+  min-height: 50vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -180px;
+  
+}
+.title3 {
+  margin-top: 200px;
+  margin-bottom: -10px;
+  align-items: center;
+  align-content: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+ 
+}
+.title3 h3 {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: -170px;
+}
+.title3 h3 span {
+  color: #F9601E;
+}
+.objective {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+/**/
+  min-height: 50vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+.objective .paragraph{
+  
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 180px;
+  
+}
+.objective .paragraph p{
+text-align: center;
+font-size: 25px;
+padding: 20px 10px;
+font-family: 'Titillium Web', sans-serif;
 
 }
 
+
+.objective .obj{
+
+  position: relative;
+  flex: 1;
+  width: 370px;
+  height: 350px;
+  margin: 10px 30px;
+  margin-top: -330px;
+  justify-items: center;
+  align-items: center ;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.objective .obj h2{
+  color: #ad1dc0;
+  text-align: center;
+  
+}
+.objective .obj ul li{
+ font-size: 22px; 
+  text-transform: uppercase;
+  list-style: none;
+  letter-spacing: .2px;
+}
+.objective .obj ul li:not(:last-child){
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.objective .obj ul li span{
+  color: #ad1dc0;
+  margin-right: 5px;
+}
+
+.objective .obj img{
+  width: 400px;
+  height: 400px;
+ 
+  flex: 1;
+  margin-top: -60px;
+  margin-left: -40px;
+  position: relative;
+}
+
+
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
 
 
 @media only screen and (max-width:768px) {
@@ -660,7 +874,10 @@ wrapTypes
     text-align: center;
     font-size: 25px;
   }
-
+  .title3 h3 {
+    text-align: center;
+    font-size: 25px;
+  }
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -700,18 +917,6 @@ wrapTypes
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .services {
-    height: 1020px;
-  }
+  
 
-  #preloader {
-    background: linear-gradient(#ad1dc0, #F9601E) url("./img/preloader4.gif") no-repeat center;
-    background-size: 40%;
-    height: 100%;
-    margin-top: -150px;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-
-  }
 }

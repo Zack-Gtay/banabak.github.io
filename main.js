@@ -16,3 +16,6 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+
+// slider
